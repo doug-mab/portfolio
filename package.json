@@ -1,24 +1,23 @@
 {
-  "name": "template",
+  "name": "portfolio",
   "version": "0.1.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "My portfolio",
+  "main": "src/index.ts",
   "scripts": {
-    "start": "npm run build && node dist/index.js ",
-    "build": "tsc",
-    "dev": "ts-node-dev src/index.ts --transpileOnly --files"
+    "build": "webpack --mode=production",
+    "dev": "webpack --mode=development --watch"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doug-mab/template.git"
+    "url": "git+https://github.com/doug-mab/portfolio.git"
   },
   "keywords": [],
   "author": "Douglas Brum <douglas.mateus2005@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doug-mab/template/issues"
+    "url": "https://github.com/doug-mab/portfolio/issues"
   },
-  "homepage": "https://github.com/doug-mab/template#readme",
+  "homepage": "https://github.com/doug-mab/portfolio#readme",
   "devDependencies": {
     "@types/node": "^17.0.40",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
@@ -26,10 +25,15 @@
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "file-loader": "^6.2.0",
+    "node-sass": "^7.0.1",
     "prettier": "^2.6.2",
+    "sass-loader": "^13.0.0",
     "ts-loader": "^9.3.0",
     "ts-node": "^10.7.0",
-    "ts-node-dev": "^2.0.0"
+    "ts-node-dev": "^2.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
   },
   "dependencies": {
     "dotenv": "^16.0.1",
