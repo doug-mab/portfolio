@@ -1,2 +1,1 @@
-body {
-  background-color: #dc143c; }
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");:root{--primary-color: #D85762;--secondary-color: #272733ff}*{margin:0;padding:0;box-sizing:border-box}h1,h2,h3{font-family:'Kdam Thmor Pro', sans-serif}section{min-height:100vh;padding:20px}.introduction{display:flex;justify-content:space-between;align-items:center;padding-right:0}.introduction div{position:relative;bottom:100px;margin:50px}.introduction div h1{font-size:4rem}.introduction img{width:40%;height:40%}.crimson-bg{background-image:url("./../img/background.png");background-size:cover;color:var(--secondary-color)}.black-bg{background-color:var(--secondary-color);color:var(--primary-color)}
